@@ -35,14 +35,14 @@ type PaymentLinkRequest struct {
 type PaymentLinksResponse struct {
 	Message    string        `json:"message"`
 	Data       []PaymentLink `json:"data"`
-	StatusCode string        `json:"statusCode"`
+	StatusCode uint        `json:"statusCode"`
 	Status     string        `json:"status"`
 }
 
 type PaymentLinkResponse struct {
 	Message    string      `json:"message"`
 	Data       PaymentLink `json:"data"`
-	StatusCode string      `json:"statusCode"`
+	StatusCode uint      `json:"statusCode"`
 	Status     string      `json:"status"`
 }
 
